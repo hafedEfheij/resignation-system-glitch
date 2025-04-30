@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
-    "prestart": "node glitch-setup.js"
+    "prestart": "node glitch-setup.js",
+    "refresh": "refresh"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
