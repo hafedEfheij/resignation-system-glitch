@@ -4,13 +4,14 @@
   "description": "Course registration system for Hadhara University",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "bash glitch-startup.sh",
     "dev": "nodemon server/server.js",
     "prestart": "node glitch-setup.js",
     "refresh": "refresh",
     "glitch-start": "./start.sh",
     "watch": "node glitch-watcher.js",
-    "fix": "node glitch-fix.js"
+    "fix": "node glitch-fix.js",
+    "original-start": "node server/server.js"
   },
   "engines": {
     "node": "14.x"
