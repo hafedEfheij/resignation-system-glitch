@@ -8,16 +8,18 @@
     ],
     "install": {
       "include": [
-        "^package\\.json$",
-        "^\\.env$"
+        "^package\\.json$"
       ]
     },
     "restart": {
       "include": [
-        "^server/",
-        "^public/"
+        "^server/"
+      ],
+      "exclude": [
+        "^public/",
+        "^node_modules/"
       ]
     },
-    "throttle": 1000
+    "throttle": 5000
   }
 }

@@ -1,19 +1,24 @@
 {
   "install": {
     "include": [
-      "^package\\.json$",
-      "^\\.env$"
-    ]
+      "^package\\.json$"
+    ],
+    "exclude": []
   },
   "restart": {
     "exclude": [
       "^public/",
+      "^dist/",
+      "^\\.git/",
+      "^\\.glitch-assets$",
       "^node_modules/"
     ],
     "include": [
       "\\.js$",
-      "\\.json$"
+      "\\.json$",
+      "^server/"
     ]
   },
-  "throttle": 1000
+  "noSavedEvents": true,
+  "throttle": 5000
 }

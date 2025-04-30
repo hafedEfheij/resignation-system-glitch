@@ -7,10 +7,11 @@
     "start": "node server/server.js",
     "dev": "nodemon server/server.js",
     "prestart": "node glitch-setup.js",
-    "refresh": "refresh"
+    "refresh": "refresh",
+    "glitch-start": "./start.sh"
   },
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
