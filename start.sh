@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Run npm audit fix to address vulnerabilities
-npm audit fix
+# Fix permissions if needed
+chmod +x start.sh
 
-# Start the application
-npm start
+# Run the custom watcher script
+node glitch-watcher.js

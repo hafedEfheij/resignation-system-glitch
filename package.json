@@ -8,7 +8,9 @@
     "dev": "nodemon server/server.js",
     "prestart": "node glitch-setup.js",
     "refresh": "refresh",
-    "glitch-start": "./start.sh"
+    "glitch-start": "./start.sh",
+    "watch": "node glitch-watcher.js",
+    "fix": "node glitch-fix.js"
   },
   "engines": {
     "node": "14.x"
